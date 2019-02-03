@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroungTrangChu"
+    >
+
+
+    <include
+        layout="@layout/layout_toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestScrollViewChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorAccent"
+                    >
+                    <ImageView
+                        android:id="@+id/imHinhQuanAn"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        app:srcCompat="@drawable/user2"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/tvTenUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tên user"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="10dp"
+                        />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBackgroungTrangChu"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        >
+                        <TextView
+                            android:id="@+id/tvThongTinUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:text="Thông tin user"
+                            android:textSize="16sp"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="10dp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBackgroungTrangChu"
+                        android:layout_marginTop="10dp"
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Đăng xuất"
+                        android:id="@+id/btnDangXuat"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
